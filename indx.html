@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger da Vovó - Sabor de Casa!</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #2b1a0f;
+            color: #fff;
+            background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1600&h=900&fit=crop');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #ff9800;
+            color: #2b1a0f;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 30px 0 20px;
+            color: #ff9800;
+        }
+
+        .cardapio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .item {
+            background-color: #fff;
+            color: #333;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .item h3 {
+            color: #8b4513;
+            margin-bottom: 10px;
+        }
+
+        .item p {
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .preco {
+            display: block;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #e65100;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #ff9800;
+            color: #2b1a0f;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            border-radius: 12px;
+        }
+
+        footer p {
+            margin: 8px 0;
+        }
+
+        footer a {
+            color: #2b1a0f;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 12px;
+            }
+
+            .item img {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>🍔 Burger da Vovó 🍔</h1>
+            <p>O sabor caseiro que conquista seu coração!</p>
+        </header>
+
+        <h2>🍔 Nossos Hambúrgueres</h2>
+
+        <section class="cardapio">
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop" alt="Hambúrguer Clássico da Vovó">
+                <h3>Clássico da Vovó</h3>
+                <p>Pão macio, hambúrguer artesanal, queijo, alface, tomate e molho especial da casa.</p>
+                <span class="preco">R$ 18,00</span>
+            </div>
+
+            <div class="item">
+                <img src="img\001.jpeg.jpg" alt="Hambúrguer Queijo Total">
+                <h3>Queijo Total</h3>
+                <p>Hambúrguer suculento com muito queijo derretido e molho cremoso.</p>
+                <span class="preco">R$ 22,00</span>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&h=400&fit=crop" alt="Hambúrguer Bacon Generoso">
+                <h3>Bacon Generoso</h3>
+                <p>Hambúrguer artesanal, queijo, bacon crocante e molho especial.</p>
+                <span class="preco">R$ 25,00</span>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&h=400&fit=crop" alt="Hambúrguer Duplo Sabor">
+                <h3>Duplo Sabor</h3>
+                <p>Dois hambúrgueres, queijo duplo, alface, tomate e molho da casa.</p>
+                <span class="preco">R$ 28,00</span>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=600&h=400&fit=crop" alt="Hambúrguer Picanha Premium">
+                <h3>Picanha Premium</h3>
+                <p>Hambúrguer especial, queijo, cebola caramelizada e molho gourmet.</p>
+                <span class="preco">R$ 32,00</span>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=600&h=400&fit=crop" alt="Hambúrguer Apimentado">
+                <h3>Apimentado</h3>
+                <p>Hambúrguer artesanal, queijo, molho picante e ingredientes fresquinhos.</p>
+                <span class="preco">R$ 24,00</span>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=600&h=400&fit=crop" alt="Hambúrguer de Frango Crocante">
+                <h3>Frango Crocante</h3>
+                <p>Frango empanado crocante, queijo, alface e molho especial.</p>
+                <span class="preco">R$ 21,00</span>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?w=600&h=400&fit=crop" alt="Hambúrguer Especial Cebola">
+                <h3>Especial Cebola</h3>
+                <p>Hambúrguer artesanal com queijo, cebola dourada e molho da casa.</p>
+                <span class="preco">R$ 26,00</span>
+            </div>
+
+        </section>
+
+        <h2>🍟 Acompanhamentos</h2>
+
+        <section class="cardapio">
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&h=400&fit=crop" alt="Batata Frita Tradicional">
+                <h3>Batata Frita Tradicional</h3>
+                <p>Batatas douradas e crocantes, perfeitas para acompanhar seu hambúrguer.</p>
+                <span class="preco">R$ 10,00</span>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?w=600&h=400&fit=crop" alt="Batata com Queijo e Bacon">
+                <h3>Batata com Queijo e Bacon</h3>
+                <p>Batatas crocantes cobertas com queijo derretido e bacon.</p>
+                <span class="preco">R$ 18,00</span>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=600&h=400&fit=crop" alt="Batata Rústica">
+                <h3>Batata Rústica</h3>
+                <p>Batatas temperadas, assadas e crocantes por fora.</p>
+                <span class="preco">R$ 14,00</span>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?w=600&h=400&fit=crop" alt="Batata Grande Família">
+                <h3>Batata Grande Família</h3>
+                <p>Uma porção generosa de batatas para dividir com todo mundo.</p>
+                <span class="preco">R$ 22,00</span>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1639024471283-03518883512d?w=600&h=400&fit=crop" alt="Anéis de Cebola">
+                <h3>Anéis de Cebola</h3>
+                <p>Anéis de cebola empanados e crocantes, preparados para acompanhar seu lanche.</p>
+                <span class="preco">R$ 15,00</span>
+            </div>
+
+        </section>
+
+        <h2>🥤 Bebidas</h2>
+
+        <section class="cardapio">
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=600&h=400&fit=crop" alt="Refrigerante em Lata">
+                <h3>Refrigerante Lata</h3>
+                <p>Refrigerante geladinho para acompanhar seu pedido.</p>
+                <span class="preco">R$ 6,00</span>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1581636625402-29b2a704ef13?w=600&h=400&fit=crop" alt="Refrigerante de 1,5 Litro">
+                <h3>Refrigerante 1,5L</h3>
+                <p>Ideal para compartilhar durante a refeição.</p>
+                <span class="preco">R$ 10,00</span>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?w=600&h=400&fit=crop" alt="Refrigerante de 2 Litros">
+                <h3>Refrigerante 2L</h3>
+                <p>Uma opção maior para dividir com a família.</p>
+                <span class="preco">R$ 13,00</span>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=600&h=400&fit=crop" alt="Suco Natural">
+                <h3>Suco Natural</h3>
+                <p>Suco refrescante para deixar sua refeição ainda melhor.</p>
+                <span class="preco">R$ 8,00</span>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=600&h=400&fit=crop" alt="Suco de 1 Litro">
+                <h3>Suco de 1 Litro</h3>
+                <p>Uma opção prática para compartilhar.</p>
+                <span class="preco">R$ 14,00</span>
+            </div>
+
+            <div class="item">
+                <img src="img\002.jpeg" alt="Garrafa de Água">
+                <h3>Água</h3>
+                <p>Água para acompanhar seu lanche e matar a sede.</p>
+                <span class="preco">R$ 3,00</span>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1534616042650-80f5c9b61f09?w=600&h=400&fit=crop" alt="Garrafa de Água de 1,5 Litro">
+                <h3>Água 1,5L</h3>
+                <p>Uma garrafa maior para compartilhar.</p>
+                <span class="preco">R$ 6,00</span>
+            </div>
+
+        </section>
+
+        <footer>
+            <h2>📍 Burger da Vovó</h2>
+            <p>O sabor caseiro que conquista seu coração!</p>
+            <p>📍 Teresina - PI</p>
+            <p>📱 WhatsApp: (86) 99999-9999</p>
+            <p>⏰ Atendimento: todos os dias, das 18h às 23h</p>
+            <p>© 2026 Burger da Vovó - Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
